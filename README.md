@@ -112,3 +112,35 @@ use effect parametreleri : 1)-fn => çalışacak fonksiyon (bu fonksiyon compone
 -2 useeffect (() => {....},[]) boş bapımlılık dizisi (sadece 1 kere calısır) örnek: componentditmount gibi (component ilk yuklendiğinde)
 
 -3 useeffect (() => {....},[x,y]) x veya y değiştiğinde calısır ilk renderda da çalısır örnek: componentditupdate gibi (her güncellendiğinde)
+
+abstract class component 
+
+neden kullanılır : kod tekrarını azaltmak için 
+                   geliştiriciye "şablon"sunmak için 
+                   
+ne işe yarar : ortak işlemler bir yerde toplanır kodun duzeni ve okunabilirliği artar
+
+neden kullanılır : büyük projelerde / çok sayıda bileşenin ayrı yapıda çalıştığı durumlarda 
+
+                                                  ÖZETLE 
+                                                  
+                                                 soyut sınıf : ortak mantıgı bir yere toplar 
+                                                 alt sınıflar sadece farklı olan kısmı yazar react desteklemesede "class" ve "extends" ile bu yapı kullanılabilir
+
+
+react context api :
+
+ne işe yarar : uygulama genelinde "ortak veri" kullanmak istediğinde işimize yarar
+
+1:tema
+2:kullanıcı bilgileri 
+3:dil seçimi 
+4:sepet bilgisi
+
+
+
+
+
+
+
+
