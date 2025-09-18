@@ -95,5 +95,7 @@ use effect parametreleri : 1)-fn => çalışacak fonksiyon (bu fonksiyon compone
 2.parametre nasıl davranır (deps)
 
 -1 useeffect (() => {....}) hiç bagımlılık vermediyse (her renderda çalısır)
+
 -2 useeffect (() => {....},[]) boş bapımlılık dizisi (sadece 1 kere calısır) örnek: componentditmount gibi (component ilk yuklendiğinde)
+
 -3 useeffect (() => {....},[x,y]) x veya y değiştiğinde calısır ilk renderda da çalısır örnek: componentditupdate gibi (her güncellendiğinde)
