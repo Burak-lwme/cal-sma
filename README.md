@@ -19,6 +19,7 @@ git pull : git pushun tam tersi uzaktaki bir depodan proje,dosya gibi dokuman yu
 git branch mantıgı : farklı versiyonları aynı anda geliştirmek için kullanılır
 
 git checkout -b : yeni bir branch oluşturup hemen ona geçiş yapar
+
 git switch -c : yeni bir branch oluşturmadan geçiş yapar
 
  2. Semantic Commit Messages
@@ -44,6 +45,7 @@ perf : performans iyileştirmesi mesajı
 3. React Lifecycle Hooks
 
 Functional Component:
+
 useeffect : api çağrısı yapmak için kullanılır (sayfa yuklendiğinde verileri getirmek gibi)
 
 usestatus : içinde bileşen tutar ve her seferinde renderler "örnek : butona basılınca artan sayac"
@@ -51,22 +53,31 @@ usestatus : içinde bileşen tutar ve her seferinde renderler "örnek : butona b
 useref : status gibi  fakat renderlemez (içinde veri tutar)
 
 Class Component:
+
 componentditmount : bilesen ilk yuklendiğinde çalışır (veri çekme/branch baglama)
+
 componentditupdate : bileşen her güncelleginde calısır (güncel veriye gore işlem yapmak)
+
 componentunmount : bilesen kaldırıldıgında calısır (zamanlayıcı durdurma / event kaldırma)
 
 functional / class component farkı
+
 functional component : daha sade / modern ve hook destekli 
+
 class comonent : daha eski fakat lifecycle yontemini net gosterir
 
 merge ve rebase 
+
 -merge : 2 dalı (branch) birlestirmek çin kullanılır (bu işlem mevcut commit gecmisini korur ve yeni bir birleştirme commiti oluşturur)
 
 -rebase : bir daldaki değişiklikleri alıp bakşka bir dalın üzerine "yeniden oynatır" (bu işlem commit gecmişini daha temiz ve dogrusal hale getirir)
 
 4. React Memoization:
+
 react.memo() : bileşenin propsları degismedigi surece render edilmesini onler 
+
 usememo() : hesap gerektiren degerleri onbelleğe alır 
+
 usecallback() : fonksiyonları önbelleğe alır bileşenin gereksiz render edilmesini onler 
 
 functional componet ne zaman kullanılır : 1)daha sade ve okunabilir kod isteğinde 
@@ -91,6 +102,7 @@ use effect parametreleri : 1)-fn => çalışacak fonksiyon (bu fonksiyon compone
                            KISACA
                            
 1-parametre (ne yapılacak)
+
 2-parametre (ne zaman yapılacak)
 
 2.parametre nasıl davranır (deps)
