@@ -82,6 +82,7 @@ usecallback() : fonksiyonları önbelleğe alır bileşenin gereksiz render edil
 
 functional componet ne zaman kullanılır : 
                                           1)daha sade ve okunabilir kod isteğinde 
+                                          
                                           2)reacts hooks (useeffect-usestate) kullanılacaksa 
                              
                              avantajları
@@ -89,7 +90,9 @@ functional componet ne zaman kullanılır :
                                           2)daha modern
                                           3)daha iyi performans
                                           
-class component ne zaman kullanılır : 1)eski projelerde 
+class component ne zaman kullanılır : 
+                                      1)eski projelerde 
+                                      
                                       2)hooks öğrenmeden once yazılan bileşenlerde 
                           
                           avantajları 
@@ -99,6 +102,7 @@ class component ne zaman kullanılır : 1)eski projelerde
                                       
 use effect parametreleri : 
                            1)-fn => çalışacak fonksiyon (bu fonksiyon component reade olduktan sonra calısır)
+                           
                            2)-deps => bağımsız dizidir (hangi değiskenler değiştiginde fn fonksiyonu tekrar çalışsın onu belirler)
                            
                            KISACA
