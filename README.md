@@ -137,6 +137,106 @@ ne işe yarar : uygulama genelinde "ortak veri" kullanmak istediğinde işimize 
 3:dil seçimi 
 4:sepet bilgisi
 
+ozetle : 
+         createcontext ==> yeni bir context tanımlar
+         provider ==> veri sağlayan "sorma" bileşeni
+         usecontext ==> veriyi alan tüketen hook
+
+
+nerede kullanılır : 
+                    1-tema yonetimi
+                    2-kullanıcı login durumu 
+                    3-dil seçimi
+                    4-sepet bilgisi
+                    5-uygulama ayarları
+
+type - safing coding
+
+anlamı : yazdıgın değişkenlerin / fonksiyonların / bileşenlerin ne tur veriyle calıştıgını acıkca belirtmek anlamına gelir
+
+neden kullanılır : 
+                   hataları erken bulmak 
+                   kodların ne yaptıgını anlamak
+
+1)type / interface =  ikiside veri şekillerini tanımlar 
+
+-type : daha cok esnek,union gibi yapılar için daha iyi
+
+-interfacwe : daha cok classlar veya buyuk projelerde kullanılır
+
+2)enum = birbirine bağlı sabit değerleri temsil eden bir veri türüdür
+
+                          ornek
+                          günleri sayılarla ifade etmek yerine 
+                          enum ile isimlendirerek daha anlaşılır hale getirebiliriz:
+
+Ne işe yarar?
+
+-1 Anlamlı isimlendirme sağlar:
+
+-2 Hataları azaltır: Sadece belirli değerlerin atanmasını sağlar.
+
+-3 Okunabilirliği artırır: Sayılar yerine anlamlı isimler kullanılır.
+
+3)enum type = birden fazla tipten birini kabul eder 
+
+                      unknown / qny / never  never farkları
+                      
+any ==> her şeyi kabul eder (hicbir kontrol yapmaz / tehlikeli)
+
+unknown ==> ne oldugunu bilmediğin veri (kullanmadan once kontrol gerekir)
+
+never ==> asla bir deger almaz genelde hata fırlatan fonksiyonlarda olur
+
+                                kısaca 
+                                any : ne verirsen gecer 
+                                unknown : ne verdiğini bilmeden kullanamazsın
+                                never : asla bir şey dönmez
+                                
+atomic design pattern : 
+
+nedir : bileşen organizasyon modelidir  (bileşenleri "küçükten-büyüğe" katmanlı şekilde düzenlemeyi saglar)
+
+neden kullanılır : kodun duzenli ve okunabiilir olması için
+
+1)projede karmaşayı azaltmak ekip içi iş bbirliğini arttırmak gibi 
+
+2)bileşenleri düzenli tekrar kullanılabilir ve anlamlı bir yapıda tutmak için 
+
+                                              kısaca 
+                                              buyuk projelerde "nerede ne var" / "bu bileşeni daha once yapmışmıydık" gibi soruları son verir 
+
+atom ile maolekülün farkı : 
+
+atom ==> en kucuk bileşen (button / input)
+
+molekül ==> birden fazla atomun birleşmesiyle oluşur (label / input / errormessage) 
+
+atom tek basına gorev yapar molekül bir işlevi yapar
+
+molekül ile organizma farkı : 
+
+molekül ==> daha küçük bir bileşen (input alanı)
+
+organizma ==> birden fazla molekül ve atom içerir (login formu)
+
+organizma daha karmaşık ve bağımsız şekilde çalışabilen yapıdır
+
+template ne işe yarar : bir sayfanın yerleşim düzenini tanımlar fakat gerçek veri koymaz (header / sidebar gibi)
+
+page ne işe yarar : templateyi alır ve içine gerçek veriyi yerleştirerek kullanıcıya gosterilen son sayfayı oluşturur (login page / profilepage)
+
+                                                  ozetle 
+                                                  atom : tuğla
+                                                  molekül : tuğlalarla-duvar
+                                                  organizma : duvarlarla-oda
+                                                  template : oda planı 
+                                                  page : gerçek ev
+
+
+
+
+
 
 
 
