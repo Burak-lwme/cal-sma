@@ -122,7 +122,7 @@ use effect parametreleri :
 
 -3 useeffect (() => {....},[x,y]) x veya y değiştiğinde calısır ilk renderda da çalısır örnek: componentditupdate gibi (her güncellendiğinde)
 
-abstract class component 
+abstract class component (react bileşenleri oluşturmak için kullaılan soyut bir sınıf şablonu)
 
 neden kullanılır : kod tekrarını azaltmak için 
                    geliştiriciye "şablon"sunmak için 
