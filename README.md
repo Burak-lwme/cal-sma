@@ -129,7 +129,7 @@ neden kullanılır : kod tekrarını azaltmak için
                    
 ne işe yarar : ortak işlemler bir yerde toplanır kodun duzeni ve okunabilirliği artar
 
-neden kullanılır : büyük projelerde / çok sayıda bileşenin ayrı yapıda çalıştığı durumlarda 
+ne zaman kullanılır : büyük projelerde / çok sayıda bileşenin ayrı yapıda çalıştığı durumlarda 
 
                                                   ÖZETLE 
                                                   
