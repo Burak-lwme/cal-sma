@@ -68,7 +68,7 @@ class comonent : daha eski fakat lifecycle yontemini net gosterir
 
 merge ve rebase 
 
--merge : 2 dalı (branch) birlestirmek çin kullanılır (bu işlem mevcut commit gecmisini korur ve yeni bir birleştirme commiti oluşturur)
+-merge : 2 dalı (branch) birlestirmek için kullanılır (bu işlem mevcut commit gecmisini korur ve yeni bir birleştirme commiti oluşturur)
 
 -rebase : bir daldaki değişiklikleri alıp bakşka bir dalın üzerine "yeniden oynatır" (bu işlem commit gecmişini daha temiz ve dogrusal hale getirir)
 
