@@ -81,6 +81,7 @@ usememo() : hesap gerektiren degerleri onbelleğe alır
 usecallback() : fonksiyonları önbelleğe alır bileşenin gereksiz render edilmesini onler 
 
 functional componet ne zaman kullanılır : 
+                                          
                                           1)daha sade ve okunabilir kod isteğinde 
                                           
                                           2)reacts hooks (useeffect-usestate) kullanılacaksa 
@@ -91,7 +92,8 @@ functional componet ne zaman kullanılır :
                                           3)daha iyi performans
                                           
 class component ne zaman kullanılır : 
-                                      1)eski projelerde 
+                                     
+                                     1)eski projelerde 
                                       
                                       2)hooks öğrenmeden once yazılan bileşenlerde 
                           
@@ -101,6 +103,7 @@ class component ne zaman kullanılır :
                                       3)artık pek tercih edilmiyor
                                       
 use effect parametreleri : 
+                           
                            1)-fn => çalışacak fonksiyon (bu fonksiyon component reade olduktan sonra calısır)
                            
                            2)-deps => bağımsız dizidir (hangi değiskenler değiştiginde fn fonksiyonu tekrar çalışsın onu belirler)
